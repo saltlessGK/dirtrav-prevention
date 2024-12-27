@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, Response
 
 app = Flask(__name__)
-BASE_DIR = os.path.abspath("./resources/files")
+BASE_DIR = os.path.abspath("./resources/files") #Only meant to access test3.txt
 
 @app.route('/view', methods=['GET'])
 def view_file():
